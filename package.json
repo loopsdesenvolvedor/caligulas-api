@@ -1,0 +1,23 @@
+{
+  "name": "caligulas-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src/server"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "prisma": "^6.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-async-errors": "^3.1.1",
+    "express-session": "^1.18.1",
+    "next-auth": "^4.24.11"
+  }
+}
