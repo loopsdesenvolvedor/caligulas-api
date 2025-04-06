@@ -1,4 +1,4 @@
-import Goggle from "next-auth/providers/google";
+import Google from "next-auth/providers/google";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "./prisma";
 import NextAuth, { AuthOptions } from "next-auth";
@@ -6,7 +6,7 @@ import NextAuth, { AuthOptions } from "next-auth";
 const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
-    Goggle({
+    Google({
       clientId: "",
       clientSecret: "",
     }),
