@@ -4,8 +4,9 @@ import dotenv from "dotenv";
 import { routes } from "./routes";
 const app = express();
 
-dotenv.config();
 app.set("trust proxy", true);
+
+dotenv.config();
 app.use(express.json());
 
 app.use(routes);
