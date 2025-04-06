@@ -70,6 +70,8 @@ model Video {
   id        String   @id @default(cuid())
   img       String?
   video     String?
+  duration  String?
+  views     Int?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   posts     Post[]   @relation("PostVideos") // Relacionamento muitos-para-muitos com Post
